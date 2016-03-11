@@ -4,3 +4,4 @@
 2. 分隔符可以自定义（在conf/conf.properties中修改**datafile.split**）<br/>
     预定义的几种分隔符：1:逗号，2：分号，3：Tab，4：空格
 3. 支持多线程解析入库
+4. 要提高性能，可以修改conf/conf.properties中**datafile.commitlimit**的值。该值控制批量提交阈值，应根据自己的数据库性能调整该值。
