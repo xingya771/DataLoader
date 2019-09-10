@@ -33,7 +33,7 @@ public class Main {
         if (arg.indexOf("/target/classes/") != -1) {
             arg = arg.substring(0, arg.length() - "/target/classes/".length());
         }
-        PropertyConfigurator.configure(arg + "/conf/log4j.properties");
+        PropertyConfigurator.configure(arg + "/conf/config.properties");
         Parameters.init(arg);
         getFileFromDir(Parameters.$("datafile.path", arg));
         threadSize=Integer.parseInt(Parameters.$("threadsize", "1"));
